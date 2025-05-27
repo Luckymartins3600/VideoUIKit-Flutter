@@ -300,9 +300,10 @@ Future<RtcEngineEventHandler> rtcEngineEventHandler(
         ?.call(connection, remoteUid, quality, delay, lost);
   }, onCameraReady: () {
     agoraEventHandlers.onCameraReady?.call();
-  }, onEncryptionError: (connection, errorType) {
-    agoraEventHandlers.onEncryptionError?.call(connection, errorType);
-  }, 
+  },
+  //                              onEncryptionError: (connection, errorType) {
+  //   agoraEventHandlers.onEncryptionError?.call(connection, errorType);
+  // }, 
   //                              onExtensionError: (provider, extension, error, message) {
   //   agoraEventHandlers.onExtensionError
   //       ?.call(provider, extension, error, message);
